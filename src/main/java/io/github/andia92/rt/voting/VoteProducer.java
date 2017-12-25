@@ -49,7 +49,7 @@ public class VoteProducer
 
             dynamoDb.putItem(tableName, data);
             try {
-                Thread.sleep(1000 * random.nextInt(10));
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
